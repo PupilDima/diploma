@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dimakovalenko">
+        <insert tableName="profile">
+            <column name="description" value="This girl makes you think of a clever fox. She has wide gray eyes.
+            Her fine, straight, neck-length hair is the color of obsidian, and is worn in an utilitarian, businesslike
+            style. She is very short and has a narrow build. Her skin is dark. She has prominent cheekbones and small
+             feet. Her wardrobe is professional, with a lot of green and white."></column>
+            <column name="rate" value="3"></column>
+            <column name="rating" value="2"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="1"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This woman reminds you of an unavoidable bloodhound. She has large
+            chestnut eyes. Her thick, straight, yellow hair is very short and is worn in a businesslike style. She has
+             an athletic build. Her skin is white. She has hollow cheeks. Her wardrobe is classy, and is mostly
+             orange."></column>
+            <column name="rate" value="2"></column>
+            <column name="rating" value="4"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="3"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This gentleman reminds you of a clockwork mechanism. He has narrow blue
+            eyes that are like two sapphires. His luxurious, straight, white hair is worn in a style that reminds you
+            of the aurora borealis. He's got five o'clock shadow."></column>
+            <column name="rate" value="5"></column>
+            <column name="rating" value="4"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="2"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This misguided man has large purple eyes that are like two windows on the
+             evening sky. His luxurious, wavy, yellow hair is very short and is worn in an uncomplicated style. He is
+              short and has a graceful build. His skin is china-white."></column>
+            <column name="rate" value="4"></column>
+            <column name="rating" value="5"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="6"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This gentleman reminds you of a randy demon. He has large brown eyes. His
+             luxurious, curly, amber hair is neck-length and is worn in a businesslike, simple style. He is very tall
+              and has a wide-chested build. His skin is tanned. He has large hands. His wardrobe is plain, and is
+               mostly blue."></column>
+            <column name="rate" value="3"></column>
+            <column name="rating" value="2"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="4"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This determined girl has droopy gray eyes. Her thick, straight, yellow
+            hair is long and is worn in an impractacal, attractive style. She is very tall and has a wasp-waisted build.
+             Her skin is cream-colored. She has delicate ears and thick eyebrows. Her wardrobe is professional and
+             simple, with a lot of blue."></column>
+            <column name="rate" value="5"></column>
+            <column name="rating" value="3"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="5"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This guy puts you in mind of a darting fish. He has deep-set blue eyes
+             that are like two sapphires. His silky, curly, yellow hair is neck-length and is worn in a practical style.
+              He is tall and has a lithe build. His skin is china-white. He has delicate ears and a large mouth.
+               His wardrobe is dignified."></column>
+            <column name="rate" value="2"></column>
+            <column name="rating" value="1"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="7"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This lady reminds you of an enraged bear. She has large eyes the color of
+             an overcast sky. Her silky, wavy, black hair is worn in a style that reminds you of a horse's mane. She
+              has a busty build. Her skin is tanned. She has nearly-nonexistent eyebrows."></column>
+            <column name="rate" value="4"></column>
+            <column name="rating" value="5"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="8"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This man puts you in mind of a mysterious manta ray. He has large gray
+             eyes that are like two pools of mercury. His luxurious, wavy, chestnut hair is neck-length and is worn in
+              a practical, businesslike style. He's got a small moustache."></column>
+            <column name="rate" value="5"></column>
+            <column name="rating" value="4"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="9"></column>
+        </insert>
+        <insert tableName="profile">
+            <column name="description" value="This gentleman puts you in mind of an industrious beaver. He has hooded
+             azure eyes. His thick, curly, black hair is very short and is worn in an uncomplicated style. He is tall
+              and has a masculine build. His skin is ruddy. He has delicate ears. His wardrobe
+               is unconventional."></column>
+            <column name="rate" value="2"></column>
+            <column name="rating" value="3"></column>
+            <column name="profession" value="Psychologist"></column>
+            <column name="user_id" value="10"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="2" author="dimakovalenko">
+        <insert tableName="user">
+            <column name="full_name" value="Frederique Fontell"></column>
+            <column name="birth_date" value="1970-4-17"></column>
+            <column name="email" value="ffontell0@phpbb.com"></column>
+            <column name="phone" value="793-475-2515"></column>
+            <column name="type" value="MENTOR"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Niels Merrywether"></column>
+            <column name="birth_date" value="1993-12-8"></column>
+            <column name="email" value="nmerrywether1@census.gov"></column>
+            <column name="phone" value="934-882-3746"></column>
+            <column name="type" value="CLIENT"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Claudette Cheale"></column>
+            <column name="birth_date" value="1998-3-12"></column>
+            <column name="email" value="ccheale2@army.mil"></column>
+            <column name="phone" value="951-188-5113"></column>
+            <column name="type" value="CLIENT"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Nissa Chantrell"></column>
+            <column name="birth_date" value="1972-1-21"></column>
+            <column name="email" value="nchantrell3@arizona.edu"></column>
+            <column name="phone" value="766-440-0828"></column>
+            <column name="type" value="MENTOR"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Flori Poltone"></column>
+            <column name="birth_date" value="1968-11-3"></column>
+            <column name="email" value="fpoltone4@furl.net"></column>
+            <column name="phone" value="951-188-5113"></column>
+            <column name="type" value="CLIENT"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Felicdad Stoop"></column>
+            <column name="birth_date" value="1995-5-14"></column>
+            <column name="email" value="fstoop5@webeden.co.uk"></column>
+            <column name="phone" value="697-720-6689"></column>
+            <column name="type" value="MENTOR"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Martainn Skitch"></column>
+            <column name="birth_date" value="1992-2-13"></column>
+            <column name="email" value="mskitch6@bbb.org"></column>
+            <column name="phone" value="522-866-9213"></column>
+            <column name="type" value="CLIENT"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Pegeen Whiteside"></column>
+            <column name="birth_date" value="1968-12-4"></column>
+            <column name="email" value="pwhiteside7@auda.org.au"></column>
+            <column name="phone" value="380-857-6247"></column>
+            <column name="type" value="MENTOR"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Ermanno Faircloth"></column>
+            <column name="birth_date" value="1989-8-19"></column>
+            <column name="email" value="efaircloth8@theglobeandmail.com"></column>
+            <column name="phone" value="406-146-9962"></column>
+            <column name="type" value="CLIENT"></column>
+        </insert>
+        <insert tableName="user">
+            <column name="full_name" value="Adrienne Brodeau"></column>
+            <column name="birth_date" value="1998-11-1"></column>
+            <column name="email" value="abrodeau9@stumbleupon.com"></column>
+            <column name="phone" value="728-156-4248"></column>
+            <column name="type" value="MENTOR"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="dimakovalenko">
+        <insert tableName="aspect">
+            <column name="name" value="aspect1"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect2"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect3"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect4"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect5"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect6"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect7"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect8"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect9"></column>
+        </insert>
+        <insert tableName="aspect">
+            <column name="name" value="aspect10"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="4" author="dimakovalenko">
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="1"></column>
+            <column name="aspect_id" value="1"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="2"></column>
+            <column name="aspect_id" value="2"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="3"></column>
+            <column name="aspect_id" value="3"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="4"></column>
+            <column name="aspect_id" value="4"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="4"></column>
+            <column name="aspect_id" value="4"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="5"></column>
+            <column name="aspect_id" value="5"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="6"></column>
+            <column name="aspect_id" value="6"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="7"></column>
+            <column name="aspect_id" value="7"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="8"></column>
+            <column name="aspect_id" value="8"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="9"></column>
+            <column name="aspect_id" value="9"></column>
+        </insert>
+        <insert tableName="profile_aspect">
+            <column name="profile_id" value="10"></column>
+            <column name="aspect_id" value="10"></column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

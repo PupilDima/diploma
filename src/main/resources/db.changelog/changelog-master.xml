@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="db.changelog/20201219-1851-initial-setup.xml"/>
+    <include file="db.changelog/20201218-1827-initial-data.xml"/>
+    <include file="db.changelog/20210112-1354-profile-add-columns-update.xml"/>
+    <include file="db.changelog/20210116-1342-provide-image-save.xml"/>
+    <include file="db.changelog/20210121-1557-provide-user-authentication.xml"/>
+    <include file="db.changelog/20210123-1308-provide-review.xml"/>
+
+</databaseChangeLog>

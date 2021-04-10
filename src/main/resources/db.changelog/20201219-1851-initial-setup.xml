@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dimakovalenko">
+        <createTable tableName="profile">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="description" type="TEXT">
+                <constraints nullable="false"></constraints>
+            </column>
+            <column name="rate" type="DECIMAL(5,2)">
+                <constraints nullable="false"></constraints>
+            </column>
+            <column name="user_id" type="INT">
+                <constraints foreignKeyName="fk_puser_id" nullable="true"></constraints>
+            </column>
+            <column name="profession" type="TEXT">
+                <constraints nullable="true"></constraints>
+            </column>
+            <column name="rating" type="DECIMAL(5,2)">
+                <constraints nullable="true"></constraints>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="dimakovalenko">
+        <createTable tableName="user">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="full_name" type="VARCHAR(255)">
+                <constraints nullable="false"></constraints>
+            </column>
+            <column name="birth_date" type="DATE">
+                <constraints nullable="true"></constraints>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false"></constraints>
+            </column>
+            <column name="phone" type="VARCHAR(255)">
+                <constraints nullable="true"></constraints>
+            </column>
+            <column name="type" type="ENUM('MENTOR', 'CLIENT')">
+                <constraints nullable="true"></constraints>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="dimakovalenko">
+        <createTable tableName="aspect">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"></constraints>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="4" author="dimakovalenko">
+        <createTable tableName="profile_aspect">
+            <column name="profile_id" type="INT">
+                <constraints foreignKeyName="fk_paprofile_id" references="profile(id)" nullable="false"></constraints>
+            </column>
+            <column name="aspect_id" type="INT">
+                <constraints foreignKeyName="fk_paaspect_id" references="aspect(id)" nullable="false"></constraints>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

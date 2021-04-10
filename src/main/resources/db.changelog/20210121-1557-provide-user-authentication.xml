@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dimakovalenko">
+        <addColumn tableName="user">
+            <column name="login" type="TEXT">
+            </column>
+        </addColumn>
+        <addColumn tableName="user">
+            <column name="password" type="TEXT">
+            </column>
+        </addColumn>
+        <addColumn tableName="user">
+            <column name="registration_date" type="DATETIME">
+            </column>
+        </addColumn>
+        <addColumn tableName="user">
+            <column name="last_visit_date" type="DATETIME">
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="2" author="dimakovalenko">
+        <update tableName="user">
+            <column name="login" value="login1"></column>
+            <column name="password" value="$2a$10$wpSCQsDidnBwSBdIZZh/KeJvVMRkRBEdO.5VSsKULif8Nldwng4Zu"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '1'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login2"></column>
+            <column name="password" value="$2a$10$2bEUq/qHHUEaMwRWvQKSVeqKf4qp8deLZ/pnqQDL8mEEJwtJM5KeG"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '2'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login3"></column>
+            <column name="password" value="$2a$10$dLIyY7g7THBnLQWgi5coCO8N79p45os1QZAeuUBaOw1iSK48PEN1K"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '3'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login4"></column>
+            <column name="password" value="$2a$10$z23klkGIYNhphAY30tGRxOYZDiysBc5irDl41zQCx2ARY2a1F7kRG"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '4'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login5"></column>
+            <column name="password" value="$2a$10$I7moEMsxT4.rP2GxGiu14eGPybi0sFx47.4wrXqMuzme5KcrQLoM2"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '5'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login6"></column>
+            <column name="password" value="$2a$10$/h5HAxCMCBDYcr7jxP1DweCRsaluR68XDrVk3fh04ZWOaw9l7y1am"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '6'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login7"></column>
+            <column name="password" value="$2a$10$p2aItaNEL6V8KOAlhb7MSOYc95XpToLVTUqlju5ukZW1WirYADLxG"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '7'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login8"></column>
+            <column name="password" value="$2a$10$lVsrP1HWbBIeb.xnI1pIb.Qw2utBEkDSiwppa3xw01OKDeKjjXewO"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '8'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login9"></column>
+            <column name="password" value="$2a$10$quhCFDg90cNCxBIyOtE1WuJFHj9PG50SivV8uiZqy51VW8DjEs66K"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '9'</where>
+        </update>
+        <update tableName="user">
+            <column name="login" value="login10"></column>
+            <column name="password" value="$2a$10$tzBKTeujzsMmf49qOfhYqOrKUFzd9P07QMiaBL4wpuVhMuhQKoJqu"></column>
+            <column name="registration_date" value="now()"></column>
+            <column name="last_visit_date" value="now()"></column>
+            <where>id = '10'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>

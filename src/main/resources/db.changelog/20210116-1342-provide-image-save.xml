@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dimakovalenko">
+        <createTable tableName="image">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="path" type="TEXT">
+                <constraints nullable="true"></constraints>
+            </column>
+        </createTable>
+    </changeSet>
+    
+    <changeSet id="2" author="dimakovalenko">
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar1.jfif"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar2.jpg"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar3.jfif"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar4.jpg"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar5.jpg"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar6.jfif"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar7.jfif"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar8.jpg"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar9.jpg"></column>
+        </insert>
+        <insert tableName="image">
+            <column name="path" value="src/main/resources/images/avatars/avatar10.jfif"></column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="3" author="dimakovalenko">
+        <addColumn tableName="user">
+            <column name="avatar_id" type="INT">
+                <constraints foreignKeyName="fk_uimage_id" references="image(id)" nullable="true"></constraints>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="4" author="dimakovalenko">
+        <update tableName="user">
+            <column name="avatar_id" value="1"></column>
+            <where>id = '1'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="2"></column>
+            <where>id = '2'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="3"></column>
+            <where>id = '3'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="4"></column>
+            <where>id = '4'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="5"></column>
+            <where>id = '5'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="6"></column>
+            <where>id = '6'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="7"></column>
+            <where>id = '7'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="8"></column>
+            <where>id = '8'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="9"></column>
+            <where>id = '9'</where>
+        </update>
+        <update tableName="user">
+            <column name="avatar_id" value="10"></column>
+            <where>id = '10'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>

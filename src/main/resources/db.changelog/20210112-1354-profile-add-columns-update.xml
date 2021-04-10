@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="dimakovalenko">
+        <addColumn tableName="profile">
+            <column afterColumn="rating" name="views" type="INT">
+                <constraints nullable="true"></constraints>
+            </column>
+        </addColumn>
+    </changeSet>
+    
+    <changeSet id="2" author="dimakovalenko">
+        <update tableName="profile">
+            <column name="views" value="41"></column>
+            <where>id = '1'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="13"></column>
+            <where>id = '2'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="97"></column>
+            <where>id = '3'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="35"></column>
+            <where>id = '4'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="20"></column>
+            <where>id = '5'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="73"></column>
+            <where>id = '6'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="84"></column>
+            <where>id = '7'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="69"></column>
+            <where>id = '8'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="123"></column>
+            <where>id = '9'</where>
+        </update>
+        <update tableName="profile">
+            <column name="views" value="55"></column>
+            <where>id = '10'</where>
+        </update>
+    </changeSet>
+</databaseChangeLog>
